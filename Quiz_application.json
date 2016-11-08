@@ -1,0 +1,67 @@
+{"Mathematics":[
+				[
+				"what is the cube of 3 ?",
+				 "what is the angle of an equirateral triange ?", 
+				 "what is the correct answer of the following arithmetic(25 - 28 + 36 -6) ?",
+				 "What is the sum of sqt(144) + 5**2 ?",
+				 "what is log 8 base 2 ?"
+				 ],
+
+				
+				[
+				 {"options": [{"A":9},{"B":27}]},
+				 {"options": [{"A":75},{"B":90},{"C":60}]},
+				 {"options": [{"A":27},{"B":45},{"C":6},{"D":56}]},
+				 {"options": [{"A":165},{"B":37}, {"C":22},{"D":36}]},
+				 {"options": [{"A":512},{"B":16}, {"C":24},{"D":3}]}
+				],
+
+				[
+				 {"is_answer":"B"},
+				 {"is_answer":"C"},
+				 {"is_answer":"A"},
+				 {"is_answer":"B"},
+				 {"is_answer":"D"}
+				]
+			   ],
+
+				
+
+"Sports":[
+		 ],
+
+
+"Logic":[],
+
+"Political":[
+			 [ 
+			  "Which is the official oposition party in Kenya?",
+			  "Who was the 9th vice president in kenya? ",
+			  "When did Kenya gain independence? ",
+			  "who is the longest serving president in Kenya  history ? ",
+			  "Which is the country neighbouring Kenya ?"
+			 ],
+
+
+	         [
+	          {"options": [{"A": "TNA"}, {"B": "CORD"},{"C": "ODM"},{"D":"WIPER"}]},
+	          {"options": [{"A": "Moody Awori"}, {"B": "George Saitoti"},{"C": "Kalonzo Musyoka"},{"D":"William Ruto"}]},
+	          {"options": [{"A": 1992}, {"B": 1978},{"C": 1964},{"D": 1963}]},
+	          {"options": [{"A": "Moi"}, {"B": "Kibaki"},{"C": "Uhuru"},{"D":"Raila"}]},
+	          {"options": [{"A": "Rwanda"}, {"B": "Somalia"},{"C": "Burundi"},{"D":"Chad"}]}
+
+	         ],
+
+	         [
+	          {"is_answer":"C"},
+	          {"is_answer":"A"},
+	          {"is_answer":"D"},
+	          {"is_answer":"A"},
+	          {"is_answer":"B"}
+	         ]
+	        ]
+
+
+		}
+
+
