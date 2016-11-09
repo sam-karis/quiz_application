@@ -28,10 +28,34 @@
 				
 
 "Sports":[
+		  [
+		  "How many players does a football team have ? ",
+		  "What is the purpose of red card in football game ? ",
+		  "Which team won EPL in year 2015 ? ",
+		  "Kenya is known is know for which sport ? ",
+		  "How long is a football match ? ",
+		  "How many points does a try in rugby equivalent to"
+		  ],
+
+		  [
+		  {"options": [{"A": 12}, {"B": 7},{"C": 11},{"D": 10}]},
+		  {"options": [{"A": "Warning"}, {"B": "Sending a player out of pitch"},{"C": "A sign of substitute"},{"D":"Time out for the team"}]},
+		  {"options": [{"A": "Manchester United"}, {"B": "Manchester City"},{"C": "Lecister"},{"D":"Chealsea"}]},
+		  {"options": [{"A": "Football"}, {"B": "Rugby"},{"C": "Basket-Ball"},{"D":"Atheletics"}]},
+		  {"options": [{"A": 90}, {"B": 120},{"C": 60},{"D": 45}]},
+		  {"options": [{"A": 7}, {"B": 1},{"C": 3},{"D": 5}]}
+		  ],
+
+		  [
+		  {"is_answer":"C"},
+		  {"is_answer":"B"},
+		  {"is_answer":"C"},
+		  {"is_answer":"D"},
+		  {"is_answer":"A"},
+		  {"is_answer":"D"}
+		  ]
 		 ],
 
-
-"Logic":[],
 
 "Political":[
 			 [ 
