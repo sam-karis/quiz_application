@@ -1,0 +1,37 @@
+{
+	"Mathematics":
+{ 
+ "quiz_time": 3,
+  "question":[
+  			   {
+  				"qn_text": "what is the cube of 3 ?",
+				"options": {"A": 9,"B":27, "C": 33, "D": 30},
+				"is_answer": "B"
+			   },
+
+			   {
+			   	"qn_text":"what is the angle of an equirateral triange ?",
+			    "options": {"A":75,"B":90,"C": 60 },
+			    "is_answer":"C"
+			   },
+
+			   {
+			   	"qn_text": "what is the correct answer of the following arithmetic(25 - 28 + 36 -6) ?",
+			    "options": {"A":27, "B":45 ,"C":6, "D":56},
+			    "is_answer": "A"
+			    },
+
+			   {
+			     "qn_text": "What is the sum of sqt(144) + 5**2 ?",
+			      "options": {"A":165, "B":37, "C":22, "D":36 },
+			      "is_answer":"B"
+			    },
+			   
+			   {
+			     "qn_text": "what is log 8 base 2 ?",
+			     "options": {"A":512, "B":16, "C":24, "D":3},
+			     "is_answer": "D"
+			    }
+			 ]
+}
+}

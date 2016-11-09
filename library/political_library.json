@@ -1,0 +1,36 @@
+{
+  "Political":
+{
+  "quiz_time": 5,
+  "question":[
+              {"qn_text": "Which is the official oposition party in Kenya?",
+               "options": {"A": "TNA", "B": "CORD", "C": "ODM", "D":"WIPER"},
+                "is_answer":"C"
+               },
+
+              {
+                "qn_text": "Who was the 9th vice president in kenya? ",
+                "options": {"A": "Moody Awori", "B": "George Saitoti", "C": "Kalonzo Musyoka", "D":"William Ruto"},
+                "is_answer":"A"
+              },
+
+              {
+                "qn_text": "When did Kenya gain independence? ",
+                "options": {"A": 1992, "B": 1978, "C": 1964, "D": 1963},
+                "is_answer":"D"
+              },
+
+              {
+                "qn_text": "who is the longest serving president in Kenya  history ? ",
+                "options": {"A": "Moi", "B": "Kibaki", "C": "Uhuru", "D":"Raila"},
+                "is_answer":"A"
+              },
+
+              {
+                "qn_text": "Which is the country neighbouring Kenya ?",
+                "options": {"A": "Rwanda", "B": "Somalia", "C": "Burundi", "D":"Chad"},
+                "is_answer":"B"
+              }
+            ]
+}
+}
