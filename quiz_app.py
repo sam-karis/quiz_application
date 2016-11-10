@@ -1,11 +1,12 @@
 import sys
 import json
-
+import time
 
 
 # It open and read the data in the json file
 Data = open("C:\Users\FESTUS\Documents/bootcamp11\quiz_library.json").read()
 QUIZ = json.loads(Data)
+
 
 
 print ("\n WELCOME TO QUIZ APPLICATION \n")
@@ -37,6 +38,7 @@ def Quiz_take():
 	if quiz_type not in quiz_list:
 		print "You can press one to view the quiz available first"
 		options()
+	start_time = time.clock()
 	print "\nTo answer the questions choose one of the options given below each question\n"
 	print "You have %d minutes to take the test" % QUIZ[quiz_type]["quiz_time"]
 	num_quiz = len(QUIZ[quiz_type]["question"])
@@ -56,8 +58,10 @@ def Quiz_take():
 
 		if user_ans == QUIZ[quiz_type]["question"][i]["is_answer"]:
 			score += 1
+	end_time = time.clock()
+	taken_time = round((end_time - start_time)/60.0, 2)
 
-	print "You got a score of %d out of %d \n" %(score, num_quiz)
+	print "You got a score of %d out of %d in %d minutes\n" %(score, num_quiz, taken_time)
 
 	options()
 
