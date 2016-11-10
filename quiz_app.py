@@ -11,7 +11,7 @@ print "This application offer various quizzes on different topics you can check 
 The function prompt the user to choose what he/ she would like the application to do with the application
 """
 def options():
-	op_available = ["1","2","3", "4"]
+	op_available = ["1","2","3"]
 	option = raw_input('\nWhat would you like to do?\n Press 1 to view the tests available\n press 2 to Take a test\n press 3 to Exit\n')
 	if option not in op_available:
 		print "wrong selection select again and choose one of the option provided below"
@@ -35,11 +35,11 @@ def quiz_take():
 	quiz_list = quiz_lib.keys()
 	user_option = []
 	for i, quiz in enumerate(quiz_list):
-		user_option.append(i+1)
+		user_option.append(str(i+1))
 		print "\n %d: %s \n"%(i+1,quiz)
 	enter_option = raw_input("Enter the number corresponding to the QUIZ you are interested in:\n ").capitalize() # this enable the user to type their option without case sensitive issues
 	
-	if int(enter_option) not in user_option:
+	if enter_option not in user_option:
 		print "You can press one to view the quiz options available first"
 		options()
 
@@ -63,7 +63,7 @@ def quiz_take():
 		if user_ans not in key_sort:
 			user_ans = raw_input("One last attempt choose one of the option given\n").upper()
 
-		if user_ans == quiz_lib[quizs_type]["question"][i]["is_answer"]:
+		if user_ans == quiz_lib[quiz_type]["question"][i]["is_answer"]:
 			score += 1
 	end_time = time.clock()
 	taken_time = round((end_time - start_time)/60.0, 2)
@@ -89,7 +89,7 @@ def quiz_list():
 the function open and load a quiz from a json file 
 """
 def quiz_import():
-	quiz_open = open(os.path.abspath("quiz_library.json")).read()
+	quiz_open = open(os.path.abspath("Quiz_application.json")).read()
 	quiz_load = json.loads(quiz_open)
 	return quiz_load
 
