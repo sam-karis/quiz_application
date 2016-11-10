@@ -1,91 +1,114 @@
-{"Mathematics":[
-				[
-				"what is the cube of 3 ?",
-				 "what is the angle of an equirateral triange ?", 
-				 "what is the correct answer of the following arithmetic(25 - 28 + 36 -6) ?",
-				 "What is the sum of sqt(144) + 5**2 ?",
-				 "what is log 8 base 2 ?"
-				 ],
+{"Mathematics":
+{ 
+ "quiz_time": 3,
+  "question":[
+  			   {
+  				"qn_text": "what is the cube of 3 ?",
+				"options": {"A": 9,"B":27, "C": 33, "D": 30},
+				"is_answer": "B"
+			   },
 
-				
-				[
-				 {"options": [{"A":9},{"B":27}]},
-				 {"options": [{"A":75},{"B":90},{"C":60}]},
-				 {"options": [{"A":27},{"B":45},{"C":6},{"D":56}]},
-				 {"options": [{"A":165},{"B":37}, {"C":22},{"D":36}]},
-				 {"options": [{"A":512},{"B":16}, {"C":24},{"D":3}]}
-				],
+			   {
+			   	"qn_text":"what is the angle of an equirateral triange ?",
+			    "options": {"A":75,"B":90,"C": 60 },
+			    "is_answer":"C"
+			   },
 
-				[
-				 {"is_answer":"B"},
-				 {"is_answer":"C"},
-				 {"is_answer":"A"},
-				 {"is_answer":"B"},
-				 {"is_answer":"D"}
-				]
-			   ],
+			   {
+			   	"qn_text": "what is the correct answer of the following arithmetic(25 - 28 + 36 -6) ?",
+			    "options": {"A":27, "B":45 ,"C":6, "D":56},
+			    "is_answer": "A"
+			    },
 
-				
+			   {
+			     "qn_text": "What is the sum of sqt(144) + 5**2 ?",
+			      "options": {"A":165, "B":37, "C":22, "D":36 },
+			      "is_answer":"B"
+			    },
+			   
+			   {
+			     "qn_text": "what is log 8 base 2 ?",
+			     "options": {"A":512, "B":16, "C":24, "D":3},
+			     "is_answer": "D"
+			    }
+			 ]
+},
 
-"Sports":[
-		  [
-		  "How many players does a football team have ? ",
-		  "What is the purpose of red card in football game ? ",
-		  "Which team won EPL in year 2015 ? ",
-		  "Kenya is known is know for which sport ? ",
-		  "How long is a football match ? ",
-		  "How many points does a try in rugby equivalent to"
-		  ],
+"Sports":
+{
+  "quiz_time": 5,
+  "question":[
+  			   {
+  			   	"qn_text": "How many players does a football team have ? ",
+  			    "options": {"A": 12, "B": 7, "C": 11, "D": 10},
+  			    "is_answer":"C"
+  			    },
+  			   {
+  			   	"qn_text": "What is the purpose of red card in football game ? ",
+  			    "options": {"A": "Warning", "B": "Sending a player out of pitch", "C": "A sign of substitute", "D":"Time out for the team"},
+  			    "is_answer": "B"
+  			   },
 
-		  [
-		  {"options": [{"A": 12}, {"B": 7},{"C": 11},{"D": 10}]},
-		  {"options": [{"A": "Warning"}, {"B": "Sending a player out of pitch"},{"C": "A sign of substitute"},{"D":"Time out for the team"}]},
-		  {"options": [{"A": "Manchester United"}, {"B": "Manchester City"},{"C": "Lecister"},{"D":"Chealsea"}]},
-		  {"options": [{"A": "Football"}, {"B": "Rugby"},{"C": "Basket-Ball"},{"D":"Atheletics"}]},
-		  {"options": [{"A": 90}, {"B": 120},{"C": 60},{"D": 45}]},
-		  {"options": [{"A": 7}, {"B": 1},{"C": 3},{"D": 5}]}
-		  ],
+  			  {
+  			  	"qn_text": "Which team won EPL in year 2015 ? ",
+  			    "options": {"A": "Manchester United", "B": "Manchester City", "C": "Lecister", "D":"Chealsea"},
+  			    "is_answer":"C"
+  			  },
 
-		  [
-		  {"is_answer":"C"},
-		  {"is_answer":"B"},
-		  {"is_answer":"C"},
-		  {"is_answer":"D"},
-		  {"is_answer":"A"},
-		  {"is_answer":"D"}
-		  ]
-		 ],
+  			  {
+  			  	"qn_text": "Kenya is known is know for which sport ? ",
+  			    "options": {"A": "Football", "B": "Rugby", "C": "Basket-Ball", "D":"Atheletics"},
+  			    "is_answer": "D"
+  			  },
+
+  			  {
+  			  	"qn_text": "How many minutes does a football match last ? ",
+  			    "options": {"A": 90, "B": 120, "C": 60, "D": 45},
+  			    "is_answer":"A"
+  			   },
+
+  			  {
+  			   "qn_text": "How many points does a try in rugby equivalent to ?",
+  			   "options": {"A": 7, "B": 1, "C": 3, "D": 5},
+  			   "is_answer":"D"
+  			   }
+ ]
+},
+
+"Political":
+{
+  "quiz_time": 5,
+  "question":[
+              {"qn_text": "Which is the official oposition party in Kenya?",
+               "options": {"A": "TNA", "B": "CORD", "C": "ODM", "D":"WIPER"},
+               	"is_answer":"C"
+               },
+
+              {
+              	"qn_text": "Who was the 9th vice president in kenya? ",
+                "options": {"A": "Moody Awori", "B": "George Saitoti", "C": "Kalonzo Musyoka", "D":"William Ruto"},
+                "is_answer":"A"
+              },
+
+              {
+              	"qn_text": "When did Kenya gain independence? ",
+                "options": {"A": 1992, "B": 1978, "C": 1964, "D": 1963},
+                "is_answer":"D"
+              },
+
+              {
+              	"qn_text": "who is the longest serving president in Kenya  history ? ",
+              	"options": {"A": "Moi", "B": "Kibaki", "C": "Uhuru", "D":"Raila"},
+              	"is_answer":"A"
+              },
+
+              {
+              	"qn_text": "Which is the country neighbouring Kenya ?",
+              	"options": {"A": "Rwanda", "B": "Somalia", "C": "Burundi", "D":"Chad"},
+              	"is_answer":"B"
+              }
+            ]
 
 
-"Political":[
-			 [ 
-			  "Which is the official oposition party in Kenya?",
-			  "Who was the 9th vice president in kenya? ",
-			  "When did Kenya gain independence? ",
-			  "who is the longest serving president in Kenya  history ? ",
-			  "Which is the country neighbouring Kenya ?"
-			 ],
-
-
-	         [
-	          {"options": [{"A": "TNA"}, {"B": "CORD"},{"C": "ODM"},{"D":"WIPER"}]},
-	          {"options": [{"A": "Moody Awori"}, {"B": "George Saitoti"},{"C": "Kalonzo Musyoka"},{"D":"William Ruto"}]},
-	          {"options": [{"A": 1992}, {"B": 1978},{"C": 1964},{"D": 1963}]},
-	          {"options": [{"A": "Moi"}, {"B": "Kibaki"},{"C": "Uhuru"},{"D":"Raila"}]},
-	          {"options": [{"A": "Rwanda"}, {"B": "Somalia"},{"C": "Burundi"},{"D":"Chad"}]}
-
-	         ],
-
-	         [
-	          {"is_answer":"C"},
-	          {"is_answer":"A"},
-	          {"is_answer":"D"},
-	          {"is_answer":"A"},
-	          {"is_answer":"B"}
-	         ]
-	        ]
-
-
-		}
-
-
+}
+}
