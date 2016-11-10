@@ -18,7 +18,7 @@ option | It enable the user to choose what to do with app
 ###WHAT USERS CAN DO WITH THE APP
 1. view the quizzes available in the library
 2. Choose the quiz to take
-3. At the end of each quiz the user get the score based on answers he/she got right
+3. At the end of each quiz the user get a score based on the answers he/she gets right
 4. At end of the quiz the user gets to know how long it took him/her to complete the quiz
 5. User are given only one attempt in case of typing an answer that does not exist otherwise
    the app conclude the user does not know the right answer.
@@ -28,10 +28,10 @@ option | It enable the user to choose what to do with app
 1. Navigate to a directory of your choice in you computer on **terminal**
 2. Clone a repository on that directory:
     * using SSH 
-        git@github.com:sam-karis/quiz_application.git
+       * git@github.com:sam-karis/quiz_application.git
       
     * Using HTTPS
-        https://github.com/sam-karis/quiz_application.git
+       * https://github.com/sam-karis/quiz_application.git
  3. Navigate to the repo on terminal and run the app with the command 
       *python quiz_app.py*
       
