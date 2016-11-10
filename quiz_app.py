@@ -63,7 +63,7 @@ def quiz_take():
 		if user_ans not in key_sort:
 			user_ans = raw_input("One last attempt choose one of the option given\n").upper()
 
-		if user_ans == quiz_lib[quiz_type]["question"][i]["is_answer"]:
+		if user_ans == quiz_lib[quizs_type]["question"][i]["is_answer"]:
 			score += 1
 	end_time = time.clock()
 	taken_time = round((end_time - start_time)/60.0, 2)
