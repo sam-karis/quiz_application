@@ -1,7 +1,7 @@
 import sys
 import json
 import time
-
+import os
 
 print ("\n WELCOME TO QUIZ APPLICATION \n")
 print "This application offer various quizzes on different topics you can check down for more information on how to proceed." 
@@ -80,8 +80,8 @@ def quiz_list():
 	quiz_list = quiz_lib.keys()
 	print "Below is a list of quiz you can take"
 
-	for quiz in quiz_list:
-		print "\n",quiz
+	for i,quiz in enumerate(quiz_list):
+		print "\n %d : %s " %(i+1,quiz)
 
 	options()
 
@@ -89,7 +89,7 @@ def quiz_list():
 the function open and load a quiz from a json file 
 """
 def quiz_import():
-	quiz_open = open("C:\Users\FESTUS\Documents/bootcamp11\quiz_library.json").read()
+	quiz_open = open(os.path.abspath("quiz_library.json")).read()
 	quiz_load = json.loads(quiz_open)
 	return quiz_load
 
