@@ -3,52 +3,59 @@ import json
 import time
 
 
-# It open and read the data in the json file
-Data = open("C:\Users\FESTUS\Documents/bootcamp11\quiz_library.json").read()
-QUIZ = json.loads(Data)
-
-
-
 print ("\n WELCOME TO QUIZ APPLICATION \n")
-print "This application offer various quizzes on different topics you can check down for more information on how to proceed. \n\n " 
+print "This application offer various quizzes on different topics you can check down for more information on how to proceed." 
 
-#The function prompt the user to choose what he/ she would like the application to do with the application
+
+"""
+The function prompt the user to choose what he/ she would like the application to do with the application
+"""
 def options():
-	op_available = ["1","2","3"]
-	option = raw_input('\nWhat would you like to do?\n Press 1 to view the tests available \n press 2 to Take a test \n press 3 to Exit\n')
+	op_available = ["1","2","3", "4"]
+	option = raw_input('\nWhat would you like to do?\n Press 1 to view the tests available\n press 2 to Take a test\n press 3 to Exit\n')
 	if option not in op_available:
 		print "wrong selection select again and choose one of the option provided below"
 		options()
 	else:
 		if int(option) == 1:
-			Quiz_list()
+			quiz_list()
 		elif int(option) == 2:
-			Quiz_take()
+			quiz_take()
 		elif int(option) == 3:
 			sys.exit()
 
 
-#The function import the quiz that the has chosen to take and also calculate the score of the quiz taken 
-def Quiz_take():
-	quiz_import()
-	quiz_list = QUIZ.keys()
-	for quiz in quiz_list:
-			print quiz
-	quiz_type = raw_input("Type the name of one of the QUIZ listed above:\n ").capitalize()
-	if quiz_type not in quiz_list:
-		print "You can press one to view the quiz available first"
-		options()
-	start_time = time.clock()
-	print "\nTo answer the questions choose one of the options given below each question\n"
-	print "You have %d minutes to take the test" % QUIZ[quiz_type]["quiz_time"]
-	num_quiz = len(QUIZ[quiz_type]["question"])
-	score = 0
 
+
+"""
+The function import the quiz that the has chosen to take and also calculate the score of the quiz taken 
+"""
+def quiz_take():
+	quiz_lib = quiz_import()
+	quiz_list = quiz_lib.keys()
+	user_option = []
+	for i, quiz in enumerate(quiz_list):
+		user_option.append(i+1)
+		print "\n %d: %s \n"%(i+1,quiz)
+	enter_option = raw_input("Enter the number corresponding to the QUIZ you are interested in:\n ").capitalize() # this enable the user to type their option without case sensitive issues
+	
+	if int(enter_option) not in user_option:
+		print "You can press one to view the quiz options available first"
+		options()
+
+	quiz_type = quiz_list[int(enter_option) - 1]
+	start_time = time.clock()
+
+	print "\nTo answer the questions choose one of the multiple choices given below each question\n"
+	print "This test should take approximately %d minutes\n" % quiz_lib[quiz_type]["quiz_time"]
+
+	num_quiz = len(quiz_lib[quiz_type]["question"])
+	score = 0	
 	for i in range(num_quiz):
-		print QUIZ[quiz_type]["question"][i]["qn_text"]
-		key_sort = sorted(QUIZ[quiz_type]["question"][i]["options"])
+		print quiz_lib[quiz_type]["question"][i]["qn_text"]
+		key_sort = sorted(quiz_lib[quiz_type]["question"][i]["options"])
 		for key in key_sort:
-			answer = QUIZ[quiz_type]["question"][i]["options"][key]
+			answer = quiz_lib[quiz_type]["question"][i]["options"][key]
 			print key,answer
 
 		user_ans = raw_input("Enter you answer?\n").upper()
@@ -56,7 +63,7 @@ def Quiz_take():
 		if user_ans not in key_sort:
 			user_ans = raw_input("One last attempt choose one of the option given\n").upper()
 
-		if user_ans == QUIZ[quiz_type]["question"][i]["is_answer"]:
+		if user_ans == quiz_lib[quiz_type]["question"][i]["is_answer"]:
 			score += 1
 	end_time = time.clock()
 	taken_time = round((end_time - start_time)/60.0, 2)
@@ -65,10 +72,12 @@ def Quiz_take():
 
 	options()
 
-#The function fetches the the different quiz type available in the json file  for the user to view them
-def Quiz_list():
-	quiz_import()
-	quiz_list = QUIZ.keys()
+"""
+The function list the the different quiz type available in the json file  for the user to view them
+"""
+def quiz_list():
+	quiz_lib = quiz_import()
+	quiz_list = quiz_lib.keys()
 	print "Below is a list of quiz you can take"
 
 	for quiz in quiz_list:
@@ -76,10 +85,14 @@ def Quiz_list():
 
 	options()
 
+"""
+the function open and load a quiz from a json file 
+"""
 def quiz_import():
-	Data = open("C:\Users\FESTUS\Documents/bootcamp11\quiz_library.json").read()
-	QUIZ = json.loads(Data)
-	return QUIZ
+	quiz_open = open("C:\Users\FESTUS\Documents/bootcamp11\quiz_library.json").read()
+	quiz_load = json.loads(quiz_open)
+	return quiz_load
 
+	options()
 
 options()
