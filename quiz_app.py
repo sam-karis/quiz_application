@@ -2,12 +2,14 @@ import sys
 import json
 
 
+
 # It open and read the data in the json file
 Data = open("C:\Users\FESTUS\Documents/bootcamp11\quiz_library.json").read()
 QUIZ = json.loads(Data)
 
+
 print ("\n WELCOME TO QUIZ APPLICATION \n")
-print "This application offer various test on different topics you can check down for more information on how to proceed. \n\n " 
+print "This application offer various quizzes on different topics you can check down for more information on how to proceed. \n\n " 
 
 #The function prompt the user to choose what he/ she would like the application to do with the application
 def options():
@@ -27,12 +29,15 @@ def options():
 
 #The function import the quiz that the has chosen to take and also calculate the score of the quiz taken 
 def Quiz_take():
+	quiz_import()
 	quiz_list = QUIZ.keys()
-	quiz_type = raw_input("choose your QUIZ:\n").capitalize()
+	for quiz in quiz_list:
+			print quiz
+	quiz_type = raw_input("Type the name of one of the QUIZ listed above:\n ").capitalize()
 	if quiz_type not in quiz_list:
 		print "You can press one to view the quiz available first"
 		options()
-	print "\nChoose one of the options given below each question\n"
+	print "\nTo answer the questions choose one of the options given below each question\n"
 	print "You have %d minutes to take the test" % QUIZ[quiz_type]["quiz_time"]
 	num_quiz = len(QUIZ[quiz_type]["question"])
 	score = 0
@@ -58,12 +63,19 @@ def Quiz_take():
 
 #The function fetches the the different quiz type available in the json file  for the user to view them
 def Quiz_list():
+	quiz_import()
 	quiz_list = QUIZ.keys()
+	print "Below is a list of quiz you can take"
 
 	for quiz in quiz_list:
 		print "\n",quiz
 
 	options()
+
+def quiz_import():
+	Data = open("C:\Users\FESTUS\Documents/bootcamp11\quiz_library.json").read()
+	QUIZ = json.loads(Data)
+	return QUIZ
 
 
 options()
