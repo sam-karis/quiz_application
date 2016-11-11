@@ -36,6 +36,6 @@ option | It enable the user to choose what to do with app
       *python quiz_app.py*
       
      
-###Bug
+###TO DO
 1. creating an online quiz repository has an error of creating several repo instead of one
     [firebase](https://quiz-app-e9563.firebaseio.com/)
